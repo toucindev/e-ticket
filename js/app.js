@@ -25,6 +25,8 @@ function comprar() {
     }
 
     databaseTicket[selectedKey] -= quantidade;
-
+    
     document.getElementById(`qtd-${selectedKey}`).textContent = `${databaseTicket[selectedKey]}`;
+    
+    alert(`Compra realizada com sucesso! Você adquiriu ${quantidade} ingresso(s) para "${selectedKey.toUpperCase()}".`);
 }
